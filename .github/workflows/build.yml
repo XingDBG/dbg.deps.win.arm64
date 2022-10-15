@@ -21,7 +21,8 @@ jobs:
         cd ..
         Invoke-WebRequest -Uri https://github.com/XingDBG/dbg.deps.win.x64/releases/download/v0.1.0/qt.7z -OutFile qt-host.7z
         &7z x qt-host.7z
-        rename qt qt-host
+        Rename-Item -Path qt -NewName qt-host
+        dir
 
     - name: Make dir
       working-directory: ${{github.workspace}}
