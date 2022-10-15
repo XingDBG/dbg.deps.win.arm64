@@ -40,7 +40,7 @@ jobs:
     - name: Configure build for arm64
       uses: ilammy/msvc-dev-cmd@v1
       with:
-        arch: arm64
+        arch: amd64_arm64
         spectre: false
         vsversion: 2022
 
